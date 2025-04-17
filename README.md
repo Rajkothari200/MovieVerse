@@ -53,7 +53,7 @@ A modern Java-based Movie Ticketing System with a Swing-based GUI. It supports m
 
 ## ℹ️ Important Setup Instructions
 
-**bookings.txt** is where all movie bookings are stored which are displayed on admin dashboard
+**bookings.txt** is where all movie bookings are stored which are displayed on admin dashboard<br>
 To enable key features like **Email Confirmation** and **Google Sheets Integration**, follow the steps below:
 
 ### 📧 Email Functionality Setup (Gmail App Password)
