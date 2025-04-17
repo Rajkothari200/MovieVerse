@@ -2,6 +2,12 @@
 
 A modern Java-based Movie Ticketing System with a Swing-based GUI. It supports multi-language movie listings, flexible booking options, PDF ticket generation, email confirmation, real-time seat locking, and Google Sheets integration via API.
 
+![Java](https://img.shields.io/badge/Java-Programming%20Language-orange) 
+![Swing](https://img.shields.io/badge/Swing-GUI-blue) 
+![Google%20Sheets%20API](https://img.shields.io/badge/Google%20Sheets-API-green) 
+![iText](https://img.shields.io/badge/iText-PDF%20Generation-critical) 
+![JavaMail](https://img.shields.io/badge/JavaMail-Email-lightblue)
+
 ---
 
 ## ✨ Features
