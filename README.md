@@ -49,3 +49,10 @@ A modern Java-based Movie Ticketing System with a Swing-based GUI. It supports m
 - SLF4J Logging
 - Apache HttpClient & Unirest
 
+---
+
+---
+
+## 🖥️ Software Used
+
+**IntelliJ IDEA Ultimate** – Primary IDE for development, offering powerful code analysis, UI designer for Swing, and seamless integration with build tools and version control.
