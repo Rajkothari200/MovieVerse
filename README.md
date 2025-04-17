@@ -49,3 +49,80 @@ A modern Java-based Movie Ticketing System with a Swing-based GUI. It supports m
 - SLF4J Logging
 - Apache HttpClient & Unirest
 
+---
+
+## ℹ️ Important Setup Instructions
+
+To enable key features like **Email Confirmation** and **Google Sheets Integration**, follow the steps below:
+
+### 📧 Email Functionality Setup (Gmail App Password)
+
+To send emails from the application, you need to create an **App Password** for your Gmail account:
+
+1. Go to your Google Account: [https://myaccount.google.com/](https://myaccount.google.com/)
+2. Navigate to **Security**.
+3. Under **"Signing in to Google"**, make sure **2-Step Verification** is turned ON.
+4. After enabling 2-Step Verification, go to the **App passwords** section.
+5. Select:
+   - **App**: "Mail"
+   - **Device**: "Other" → Name it anything (e.g., "MovieVerse App")
+6. Click **Generate** and copy the 16-character app password.
+7. In the code, replace the placeholders with your email and the generated app password.
+
+```java
+final String senderEmail = "your_email@gmail.com"; // your email ID
+final String appPassword = "your_app_password";  // generated app password
+```
+---
+
+### 🧾 Google Sheets Integration via SheetDB
+
+To connect your application to a live Google Sheet:
+
+1. Create a new **Google Sheets** document with the required structure.
+2. Go to [SheetDB.io](https://sheetdb.io).
+3. Sign in and click **"Connect a Google Sheet"**.
+4. Authorize your Google account and select the sheet you created.
+5. SheetDB will generate an **API URL** (e.g., `https://sheetdb.io/api/v1/abc123`).
+6. In your Java code, replace the placeholder with your actual API URL:
+
+```java
+private static final String SHEETDB_URL = "https://sheetdb.io/api/v1/your_generated_id";
+```
+
+---
+
+## 🖥️ Software Used
+
+**IntelliJ IDEA Ultimate** – Primary IDE for development, offering powerful code analysis, UI designer for Swing, and seamless integration with build tools and version control.
+
+---
+
+## 📸 Output Screenshots
+
+### ✅ Real-time Google Sheets Data Storage (via SheetDB.io) with form validation
+![Login](images/login.png)
+![Google Sheets Integration](images/sheets.png)
+
+### 🌐 Language Options: Hindi, Gujarati, English – 3 movies per language
+![Language Selection](images/language.png)
+
+### 📅 Flexible Booking Dates: Book tickets for up to 7 days in advance
+![Calendar Date Picker](images/calender.png)
+
+### 🎭 Ticket Categories: Recliner, Premium, Executive
+![Seat Categories](images/seat.png)
+
+### 📧 Email Ticket Confirmation to users
+![Email Confirmation](images/email.png)
+
+### 📄 PDF Ticket Download
+![Ticket Preview](images/ticketpreview.png)
+![PDF Download](images/pdf.png)
+
+### 🔒 Seat Locking: Prevents double bookings
+![Seat Locking](images/seatlocking.png)
+
+### 🔐 Admin Dashboard: View total tickets sold, revenue earned, and more
+![Admin Dashboard](images/admin.png)
+
